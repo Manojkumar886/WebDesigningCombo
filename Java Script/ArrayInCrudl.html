@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array-Crudl</title>
+    <script>
+        //push-add,pop-onlyy last element deleted,length,map-list,filter-update ,delete
+
+        //int[] var=new int[10];
+        //int [] var1={12,4,6,65,7654,56};
+
+        let hai=[];
+        let hello=new Array();//format for size
+
+
+        hai.push("Manojkumar")
+        hai.push(false)
+        hai.push(987654345678)
+        hai.push('A')
+        //hai.pop()
+
+        // for(i=0;i<hai.length;i++)
+        // {
+        //     alert(hai[i])
+        // }
+
+        // function value(data)
+        // {
+        //     alert(data)
+        // }
+        // hai.map(value)
+
+        let user=prompt("Tell us what is position to delete :","")
+        hai=hai.filter((pos,data)=>
+        {
+            return pos!==hai[user];
+        })
+         
+        document.writeln("After Deleted values")
+        hai.map((data)=>
+        {
+            document.writeln(data+ " <br>")
+        })
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
