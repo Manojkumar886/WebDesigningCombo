@@ -8,14 +8,20 @@
     <script src="ArrayForm.js"></script>
 </head>
 <body>
+    <form method="post">
     <h1>Welcome to Crudl operation in Java Script</h1>
     
-    <input type="text" id="users" name="funny" placeholder="Enter your name">
+    <input type="text" id="users" name="funny" placeholder="Enter your name" >
     
-    <button onclick="inserting()" style="color: greenyellow;">Add</button>
+    <button onclick="inserting()" style="color: greenyellow;" >Add</button>
     
     <button style="color: orange;" onclick="list()">List</button>
 
+    <button onclick="updating()">Update</button>
+    <button onclick="deleting()">Delete</button>
+    <input type="text" name="fname" required>
+    <input type="submit" value="Submit">
+    </form>
     
 </body>
 </html>

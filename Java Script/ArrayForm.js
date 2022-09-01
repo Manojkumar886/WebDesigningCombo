@@ -15,3 +15,21 @@ let list=()=>
         document.writeln(data +"<br>")
     })
 }
+
+let updating=()=>
+{
+    let tmp=document.getElementById("users").value
+    const newone=prompt("Tell us what is update/Replace"+datas[tmp])
+    datas[tmp]=newone;
+    list()  
+}
+
+var deleting=()=>
+{
+    const tmp=document.getElementById("users").value
+    datas=datas.filter((data)=>
+    {
+        return data!==tmp
+    })
+    list()
+}
