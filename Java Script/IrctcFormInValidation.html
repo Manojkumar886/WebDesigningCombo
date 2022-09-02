@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ValidationInJavaScript</title>
+    <style>
+        #disk
+        {
+            width: 170px;
+        }
+        span
+        {
+            color: red;
+        }
+    </style>
+    <script src="Validate.js"></script>
+</head>
+<body>
+    <h2 align="center" style="color: greenyellow;">Irctc Address Details</h2>
+    <form name="irctc" onsubmit="Active()" action="#">
+        <table align="center">
+            <tbody>
+                <tr>
+                    <td><input type="text" name="fno" placeholder="Flat/doorNo/...."><br><span id="fdetails"></span></td>
+                    <td><input type="text" class="change" name="sname" placeholder="Streetvalue"><br><span id="sdetails"></span></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="Area" placeholder="Areaname" /><span id="adetails"></span></td>
+                    <td><input type="text" class="change" name="pin" placeholder="pincode" ><br><span id="pin1"></span></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="state" placeholder="StateName" /><span id="statedetails"></span></td>
+                    <td>
+                        <select id="disk" class="change">
+                            <option hidden selected>Select District</option>
+                            <option>Salem</option>
+                            <option>Chennai</option>
+                            <option>Kovai</option>
+                            <option>Dindukkal</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span id="copydetails"></span>
+                        Copy to Office Address
+                        <input type="radio" name="Add" value="Yes"> Yes
+                        <input type="radio" name="Add" value="No">No
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="reset" value="Cancel"></td>
+                    <td><input type="submit" value="Register"></td>
+                
+                </tr>
+
+
+
+
+
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>

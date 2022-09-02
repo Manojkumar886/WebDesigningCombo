@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data validation in Java Script</title>
+    <script>
+        const validate=()=>
+        {
+            // let caps=document.forms['hai'].fullname.value
+            // alert(""+(/^[A-Za-z]+$/).test(caps))
+            // let mob=document.forms['hai'].mobile.value
+            // alert((/^[0-9]/).test(mob))
+            let em=document.forms['hai'].mail.value
+            alert((/^(?=.*[0-9])(?=.+[@.])[A-Za-z0-9@.]/).test(em))
+
+        }
+    </script>
+</head>
+<body>
+    <form name="hai">
+        <input name="fullname" type="text" placeholder="Enter your name">
+        <input name="mobile"  type="tel" placeholder="enter your mobileno">
+        <input name="mail" type="email" placeholder="Enter your MailId">
+        <input type="button" value="Submit" onclick="validate()">
+    </form>
+
+</body>
+</html>
