@@ -9,7 +9,7 @@ let basic1=()=>
 }
 
 
-let connect=(name,mobileno)=>
+let connect=(fname,mobile)=>
 {
-    return("My name is"+name + "My mobile no"+mobileno)
+    return("Ma name is :"+fname+"My mobile is :"+mobile)
 }
